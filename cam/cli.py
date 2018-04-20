@@ -17,7 +17,6 @@ from __future__ import unicode_literals
 import argparse
 import pkg_resources
 import setuptools
-import pkginfo
 
 import colorama
 import cpplint

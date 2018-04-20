@@ -22,7 +22,7 @@ __title__ = "cam"
 __summary__ = "Collection of utilities for C/C++ archive (lib and app) build"
 __uri__ = "https://github.com/mingyiz/cam"
 
-__version__ = "0.2.0"
+__version__ = "0.2.1"
 
 __author__ = "Mingyi Zhang"
 __email__ = "mingyi.z@outlook.com"
