@@ -109,11 +109,14 @@ def Make(config,stream):
 def CPPLint(config,stream):
     cpplint = config.cpplint
     filters  = cpplint.get('filter',[])
+    linelength  = cpplint.get('linelength',[])
     sources  = cpplint.get('sources',[])
     directory = config.directory
     options = ''
     if len(filters):
         options +=" --filter=" + ",".join(filters)
+    if linelength:
+        options +=" --linelength=" + str(linelength)
     slist=[]
     for src in sources:
         rex = os.path.join(config.location,src)
